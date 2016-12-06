@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font: normal 100%/1.3 "", sans-serif;
+  font: normal 100%/1.3 Merriweather, serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -26,8 +26,181 @@ body {
   display: block;
 }
 
+.icon {
+  width: 2rem;
+  margin: 0 1rem 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 h1,
 h2,
 p {
   margin: 0 0 1.3rem;
+}
+
+h1 {
+  font-family: Pacifico, cursive;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-btn {
+  padding: 1rem;
+  display: block;
+  color: #630;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  background-color: #630;
+  color: #fff;
+}
+
+.nav-btn img:nth-child(even) {
+  display: none;
+}
+
+.nav-btn:hover img:first-child {
+  display: none;
+}
+
+.nav-btn:hover img:nth-child(even) {
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem;
+  background-color: #630;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 7.5px;
+  border: 3px solid #630;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #630;
+}
+
+/* ----- =Header ----- */
+
+.masthead {
+  background-color: #630;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .333);
+}
+
+.masthead h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.logo-icon {
+  float: right;
+  height: 2rem;
+}
+
+.nav-check {
+  position: absolute;
+  left: -10000px;
+}
+
+.nav-label img {
+  float: left;
+  margin: 0;
+}
+
+.nav-label img:last-child {
+  display: none;
+}
+
+.masthead nav {
+  background-color: #fff;
+  position: fixed;
+  top: 4rem;
+  left: -100vh;
+  transition: left .5s;
+  width: 66.666%;
+  height: calc(100vh - 4rem);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, .3333);
+  z-index: 999;
+}
+
+.nav-check:checked ~ nav {
+  left: 0;
+}
+
+.nav-check:checked ~ .nav-label img:first-child {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label img:last-child {
+  display: inline-block;
+}
+
+nav ul.navbar {
+  border-bottom: 1px solid #630;
+  padding: .5rem 0;
+}
+
+nav ul.navbar:last-child {
+  border-bottom: none;
+}
+
+nav p {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ----- =Main ----- */
+
+body > main {
+  margin-top: 5rem;
+}
+
+.specials figure {
+  margin: 0;
+  position: relative;
+}
+
+.specials figcaption {
+  /*display: none;*/
+  transition: opacity .5s;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.specials figcaption div {
+  color: #fff;
+  width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.specials figcaption div p {
+  font-weight: lighter;
+}
+
+.specials figure:hover figcaption {
+  opacity: 1;
 }
