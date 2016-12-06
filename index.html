@@ -7,35 +7,43 @@
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Pacifico" rel="stylesheet">
 </head>
 <body>
   <header class="masthead">
     <img class="logo-icon" src="images/cc-logo-wb.svg" alt="Logo">
     <input type="checkbox" class="nav-check" id="nav-check">
-    <label class="nav-label" for="nav-check"><img class="img-icon" src="images/toggle-brown.svg" alt=""><img class="img-icon" src="images/toggle-x-brown.svg" alt=""></label>
+    <label class="nav-label" for="nav-check"><img class="icon" src="images/toggle-brown.svg" alt=""><img class="icon" src="images/toggle-x-brown.svg" alt=""></label>
     <nav>
       <ul class="navbar">
         <li>
-          <a href="#">
+          <a class="nav-btn" href="#">
             <img class="icon" src="images/home-brown.svg" alt="">
             <img class="icon" src="images/home-white.svg" alt="">
             <p>Home</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="nav-btn" href="#">
             <img class="icon" src="images/product-brown.svg" alt="">
             <img class="icon" src="images/product-white.svg" alt="">
             <p>Products</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="nav-btn" href="#">
             <img class="icon" src="images/location-brown.svg" alt="">
             <img class="icon" src="images/location-white.svg" alt="">
             <p>Locations</p>
           </a>
         </li>
+      </ul>
+      <ul class="navbar">
+        <li><a class="nav-btn" href="#specials">Specials</a></li>
+        <li><a class="nav-btn" href="#about">About</a></li>
+        <li><a class="nav-btn" href="#locations">Locations</a></li>
+        <li><a class="nav-btn" href="#products">Featured Products</a></li>
+        <li><a class="nav-btn" href="#reviews">Reviews</a></li>
       </ul>
     </nav>
     <h1>Coco's Chocolatiers</h1>
@@ -47,9 +55,11 @@
           <figure>
             <img class="img-flex" src="images/choco-xmas.jpg" alt="Christmas Chocolate">
             <figcaption>
-              <h3>Chocolate Covered Apples</h3>
-              <p>A highlight of this years Christmas collection are our brand new Chocolate Covered Apples</p>
-              <a class="btn" href="#">Buy now!</a>
+              <div>
+                <h3>Chocolate Covered Apples</h3>
+                <p>A highlight of this years Christmas collection are our brand new Chocolate Covered Apples</p>
+                <a class="btn" href="#">Buy now!</a>
+              </div>
             </figcaption>
           </figure>
           <h2>Our Christmas specials are here!</h2>
@@ -81,30 +91,30 @@
                 <p>323 Richmond Rd, Ottawa ON</p>
               </figcaption>
             </figure>
-            <ul>
+            <ul class="navbar">
               <li>
-                <a href="#">
+                <a class="nav-btn" href="#">
                   <img class="icon" src="images/phone.svg" alt="">
                   <img class="icon" src="images/phone-alt.svg" alt="">
                   <p>Call</p>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="nav-btn" href="#">
                   <img class="icon" src="images/directions.svg" alt="">
                   <img class="icon" src="images/directions-alt.svg" alt="">
                   <p>Directions</p>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="nav-btn" href="#">
                   <img class="icon" src="images/share.svg" alt="">
                   <img class="icon" src="images/share-alt.svg" alt="">
                   <p>Share</p>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="nav-btn" href="#">
                   <img class="icon" src="images/product-brown.svg" alt="">
                   <img class="icon" src="images/product-white.svg" alt="">
                   <p>Products</p>
