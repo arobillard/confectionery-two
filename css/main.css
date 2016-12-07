@@ -302,7 +302,7 @@ body > main {
 .map-drop img {
   width: 1.5rem;
   position: absolute;
-  left: 35%;
+  right: 35%;
   top: -1.09rem;
 }
 
