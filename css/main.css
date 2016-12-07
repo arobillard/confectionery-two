@@ -43,10 +43,25 @@ h1 {
   font-family: Pacifico, cursive;
 }
 
+h2 {
+  color: #630;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+.a-inline {
+  color: #630;
+  text-decoration: none;
+}
+
+.a-inline:hover {
+  text-decoration: underline;
+}
+
 .navbar {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 
@@ -169,7 +184,11 @@ nav p {
 /* ----- =Main ----- */
 
 body > main {
-  margin-top: 5rem;
+  margin-top: 4rem;
+}
+
+.box-dec {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3333);
 }
 
 .specials figure {
@@ -195,6 +214,7 @@ body > main {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  padding: 1rem;
 }
 
 .specials figcaption div p {
@@ -203,4 +223,230 @@ body > main {
 
 .specials figure:hover figcaption {
   opacity: 1;
+}
+
+.specials > div {
+  padding: 1rem;
+}
+
+.about div {
+  padding: 1rem;
+}
+
+.locations header {
+  padding: 1rem 1rem 0;
+}
+
+.locations figure {
+  margin: 0;
+}
+
+.locations figcaption {
+  padding: 1rem;
+  background-color: #630;
+  width: 100%;
+}
+
+.locations figcaption h3,
+.locations figcaption p {
+  margin: 0;
+  color: #fff;
+}
+
+.locations figcaption p {
+  font-size: .875rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.locations .navbar {
+  padding: .5rem;
+}
+
+.locations li {
+  float: left;
+  width: 25%;
+}
+
+.locations .nav-btn {
+  padding: .75rem 0;
+  font-size: .75rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.locations .nav-btn .icon {
+  margin: 0 0 .5rem;
+}
+
+.locations .nav-btn p {
+  margin: 0;
+}
+
+.locations .hours {
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
+
+.locations .hours dt {
+  float: left;
+}
+
+.locations .hours dd {
+  text-align: right;
+  margin: 0;
+}
+
+.products {
+  overflow: hidden;
+}
+
+.products header {
+  padding: 1rem 1rem 0;
+}
+
+.products .scroll-window {
+  width: 100vw;
+  overflow: scroll;
+}
+
+.products .scroll-container {
+  width: 400vw;
+}
+
+.products a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  float: left;
+  width: 25%;
+}
+
+.products a:hover {
+  background-color: #f2f2f2;
+  transition: background-color 1s;
+}
+
+.products figure {
+  margin: 0;
+  box-shadow: 1px 1px 5px #888;
+}
+
+.products figcaption {
+  padding: 1rem;
+  background-color: #630;
+}
+
+.shop-reviews {
+  padding: 1rem;
+}
+
+.reviews {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.user-review {
+  overflow: hidden;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.user-review:hover {
+  background-color: #f2f2f2;
+  transition: background-color 1s;
+}
+
+.user-img {
+  float: left;
+  width: 25%;
+  padding: 0 1rem 0 0;
+}
+
+.user-review-body,
+.rating {
+  width: 75%;
+  float: right;
+}
+
+.user-review-body q,
+.user-review-body h3 {
+  margin: 0;
+}
+
+.user-review-body q {
+  quotes: none;
+}
+
+.rating {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.rating img {
+  width: 50%;
+}
+
+/* ----- =Footer ----- */
+
+body > footer {
+  background-color: #000;
+}
+
+footer .navbar li {
+  display: inline-block;
+}
+
+.nav-soc {
+  padding: 2rem 1rem 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-soc a {
+  margin: 0 1rem;
+  display: block;
+}
+
+.soc-icon {
+  width: 2rem;
+}
+
+.nav-soc img:last-child {
+  display: none;
+}
+
+.nav-soc a:hover img:first-child {
+  display: none;
+}
+
+.nav-soc a:hover img:last-child {
+  display: block;
+}
+
+.nav-info {
+  padding: 1rem 1rem 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-info li:nth-child(2) {
+  border-left: 1px solid #404040;
+  border-right: 1px solid #404040;
+}
+
+.nav-info a {
+  padding: 0 .5rem;
+  text-decoration: none;
+  color: #404040;
+  font-size: .875rem;
+}
+
+.nav-info a:hover {
+  color: #630;
 }
