@@ -443,6 +443,9 @@ body > main {
 }
 
 .rating {
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
   -webkit-appearance: none;
   appearance: none;
 }
