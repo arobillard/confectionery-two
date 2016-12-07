@@ -104,11 +104,11 @@
                 </a>
               </li>
               <li>
-                <a class="nav-btn" href="#">
+                <label class="nav-btn map-label" for="map-check">
                   <img class="icon" src="images/directions.svg" alt="">
                   <img class="icon" src="images/directions-alt.svg" alt="">
                   <p>Directions</p>
-                </a>
+                </label>
               </li>
               <li>
                 <a class="nav-btn" href="#">
@@ -125,22 +125,32 @@
                 </a>
               </li>
             </ul>
-            <dl class="hours">
-              <dt>Sunday</dt>
-              <dd><time>9<span class="smallcaps">AM</span></time> - <time>6<span class="smallcaps">PM</span></time></dd>
-              <dt>Monday</dt>
-              <dd><time>9<span class="smallcaps">AM</span></time> - <time>8<span class="smallcaps">PM</span></time></dd>
-              <dt>Tuesday</dt>
-              <dd><time>9<span class="smallcaps">AM</span></time> - <time>8<span class="smallcaps">PM</span></time></dd>
-              <dt>Wednesday</dt>
-              <dd><time>9<span class="smallcaps">AM</span></time> - <time>8<span class="smallcaps">PM</span></time></dd>
-              <dt>Thursday</dt>
-              <dd><time>9<span class="smallcaps">AM</span></time> - <time>8<span class="smallcaps">PM</span></time></dd>
-              <dt>Friday</dt>
-              <dd><time>9<span class="smallcaps">AM</span></time> - <time>10<span class="smallcaps">PM</span></time></dd>
-              <dt>Saturday</dt>
-              <dd><time>9<span class="smallcaps">AM</span></time> - <time>10<span class="smallcaps">PM</span></time></dd>
-            </dl>
+            <input type="checkbox" class="map-check" id="map-check">
+            <div class="map-drop">
+              <img src="images/tri-point.svg" alt="">
+              <div>
+                <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.8408779037636!2d-75.75586228444494!3d45.39238057910015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce040267d2ffe1%3A0xcaa44e09590f8c34!2s323+Richmond+Rd%2C+Ottawa%2C+ON+K1Z+6X7!5e0!3m2!1sen!2sca!4v1481076239583" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="s-hours">
+              <h3>Store Hours</h3>
+              <dl class="hours">
+                <dt>Sunday</dt>
+                <dd><time>9<span class="smallcaps">AM</span></time> - <time>6<span class="smallcaps">PM</span></time></dd>
+                <dt>Monday</dt>
+                <dd><time>9<span class="smallcaps">AM</span></time> - <time>8<span class="smallcaps">PM</span></time></dd>
+                <dt>Tuesday</dt>
+                <dd><time>9<span class="smallcaps">AM</span></time> - <time>8<span class="smallcaps">PM</span></time></dd>
+                <dt>Wednesday</dt>
+                <dd><time>9<span class="smallcaps">AM</span></time> - <time>8<span class="smallcaps">PM</span></time></dd>
+                <dt>Thursday</dt>
+                <dd><time>9<span class="smallcaps">AM</span></time> - <time>8<span class="smallcaps">PM</span></time></dd>
+                <dt>Friday</dt>
+                <dd><time>9<span class="smallcaps">AM</span></time> - <time>10<span class="smallcaps">PM</span></time></dd>
+                <dt>Saturday</dt>
+                <dd><time>9<span class="smallcaps">AM</span></time> - <time>10<span class="smallcaps">PM</span></time></dd>
+              </dl>
+            </div>
           </div>
         </section>
       </div>
