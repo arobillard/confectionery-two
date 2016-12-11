@@ -338,7 +338,7 @@ body > main {
   left: 50%;
   transform: translateX(-50%);
   display: none;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .map-drop div {
@@ -847,7 +847,7 @@ footer .navbar li {
   .map-drop {
     display: block;
     width: calc(100% - 2rem);
-    top: 18.25rem;
+    top: 18.75rem;
   }
 
   .map-drop div {
@@ -857,7 +857,7 @@ footer .navbar li {
 
   .map-drop .g-map {
     width: 100%;
-    height: 10rem;
+    height: 9.5rem;
     padding: 0;
   }
 
