@@ -100,7 +100,6 @@ h2 {
   color: #fff;
   text-decoration: none;
   border-radius: 7.5px;
-  border: 3px solid #630;
 }
 
 .btn:hover {
@@ -121,15 +120,23 @@ h2 {
 }
 
 .masthead h1 {
-  color: #fff;
   text-align: center;
   font-size: 1.5rem;
   margin: 0;
 }
 
+.masthead h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .logo-icon {
   float: right;
   height: 2rem;
+}
+
+.logo-icon:hover {
+  opacity: .75;
 }
 
 .nav-check {
@@ -205,11 +212,23 @@ nav p {
 
 body > main {
   margin-top: 4rem;
+  position: relative;
+}
+
+.background {
+  position: fixed;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vw;
+  z-index: -1000;
 }
 
 .box-dec {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3333);
+  border-bottom: 2px solid rgba(0, 0, 0, .3333);
+  background-color: #fff;
   clear: both;
+  max-width: 65rem;
 }
 
 .specials figure {
@@ -220,7 +239,7 @@ body > main {
 .specials figcaption {
   transition: opacity .5s;
   opacity: 0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(102, 51, 0, .5);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -229,7 +248,8 @@ body > main {
 
 .specials figcaption div {
   color: #fff;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -237,7 +257,7 @@ body > main {
   padding: 1rem;
 }
 
-.specials figcaption div p {
+.specials figcaption p {
   font-weight: lighter;
 }
 
@@ -281,6 +301,7 @@ body > main {
 
 .loc-info {
   padding: 1rem;
+  position: relative;
 }
 
 /*.locations .navbar {
@@ -317,13 +338,7 @@ body > main {
   left: 50%;
   transform: translateX(-50%);
   display: none;
-}
-
-.map-drop img {
-  width: 1.5rem;
-  position: absolute;
-  right: 35%;
-  top: -1.1rem;
+  z-index: 1000;
 }
 
 .map-drop div {
@@ -359,6 +374,10 @@ body > main {
   padding: 1rem 0 0;
 }
 
+.locations .s-hours h3 {
+  border-bottom: 1px solid #000;
+}
+
 .locations .hours {
   margin: 0;
 }
@@ -385,12 +404,12 @@ body > main {
 }
 
 .products .scroll-window {
-  width: 100vw;
+  width: 100%;
   overflow: scroll;
 }
 
 .products .scroll-container {
-  width: 400vw;
+  width: 400%;
 }
 
 .products a {
@@ -410,17 +429,22 @@ body > main {
 }
 
 .products figure {
+  position: relative;
   margin: 0;
   box-shadow: 1px 1px 5px #888;
 }
 
 .products figcaption {
   padding: 1rem;
-  background-color: #630;
+  background-color: rgba(102, 51, 0, .75);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .shop-reviews {
   padding: 1rem;
+  overflow: hidden;
 }
 
 .reviews {
@@ -434,6 +458,7 @@ body > main {
   overflow: hidden;
   padding: 1rem 0;
   border-bottom: 1px solid #f2f2f2;
+  overflow: hidden;
 }
 
 .user-review:hover {
@@ -462,7 +487,31 @@ body > main {
   quotes: none;
 }
 
+/*meter {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  background: url("https://arobillard.github.io/confectionery-website-prototype/images/rating-5.svg") transparent;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left top;
+}
+
 meter::-moz-meter-bar {
+  background: none;
+}
+
+.rate-4 {
+  background: url("https://arobillard.github.io/confectionery-website-prototype/images/rating-4.svg") transparent;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left top;
+}*/
+
+/*meter::-moz-meter-bar {
   -moz-appearance: none;
 }
 
@@ -473,7 +522,7 @@ meter {
   -webkit-appearance: none;
   appearance: none;
   background: none;
-}
+}*/
 
 .rating img {
   width: 50%;
@@ -550,8 +599,9 @@ footer .navbar li {
   }
 
   .about .img-flex {
-    max-width: 15rem;
-    margin: 1rem auto 0;
+    max-width: 35% ;
+    margin: 0 auto;
+    padding: 1rem 0 0;
   }
 
 }
@@ -559,7 +609,7 @@ footer .navbar li {
 @media only screen and (min-width: 30em) {
 
   .products .scroll-container {
-    width: 200vw;
+    width: 200%;
   }
 
 }
@@ -572,6 +622,7 @@ footer .navbar li {
   }
 
   h1,
+  h2,
   p {
     margin: 0 0 1.4rem;
   }
@@ -667,9 +718,17 @@ footer .navbar li {
 
   /* ----- +Main ----- */
 
+  .specials figcaption div {
+    max-width: 50%;
+  }
+
+  .specials h3 {
+    margin: 0 0 1.4rem;
+  }
+
   .about .img-flex {
-    max-width: 15rem;
     margin: 1rem 1rem 1rem 0;
+    padding: 0;
     border-left: 1rem solid #fff;
     float: right;
   }
@@ -689,8 +748,34 @@ footer .navbar li {
     width: 50%;
   }
 
+  .map-drop .g-map {
+    width: calc(50vw - 2rem);
+    height: calc(40vw - 3rem);
+    padding: .5rem;
+  }
+
   .locations .navbar {
     padding: 0;
+  }
+
+  .user-review {
+    float: left;
+    width: 33.3333%;
+    padding: 1rem;
+    border-bottom: none;
+  }
+
+  .user-img {
+    float: none;
+    width: 50%;
+    padding: 0 0 1rem;
+    margin: 0 auto;
+  }
+
+  .user-review-body,
+  .rating {
+    width: 100%;
+    float: none;
   }
 
 }
@@ -702,21 +787,126 @@ footer .navbar li {
     text-align: left;
   }
 
+  .products p {
+    display: none;
+  }
+
+  .products .scroll-container {
+    width: 100%;
+  }
+
+  /* ----- +Footer ----- */
+
+  .nav-soc a {
+    margin: 0 3rem;
+  }
+
+  .soc-icon {
+    width: 3rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
-  .masthead {
-    background-color: blue;
+  html {
+    font-size: 120%;
+    line-height: 1.5;
   }
 
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+  .wrapper {
+    max-width: 65rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  body > main {
+    padding: 1rem 0 0;
+  }
+
+  .box-dec {
+    margin: 0 auto 1rem;
+    border-bottom: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .75);
+  }
+
+}
+
+@media only screen and (min-width: 72em) {
+
+  /*.background {
+    height: auto;
+    width: 100vw;
+  }*/
+
+  .map-drop {
+    display: block;
+    width: calc(100% - 2rem);
+    top: 18.25rem;
+  }
+
+  .map-drop div {
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .map-drop .g-map {
+    width: 100%;
+    height: 10rem;
+    padding: 0;
+  }
 
 }
 
 @media only screen and (min-width: 90em) {
 
-  .masthead {
-    background-color: green;
+  html {
+  font-size: 130%;
+}
+
+}
+
+@media only screen and (min-width: 120em) {
+
+  /*.background {
+    height: 100%;
+    width: auto;
+  }*/
+
+  .side-bar {
+    width: 20em;
+    position: absolute;
+    top: 1rem;
+  }
+
+  .sb-r {
+    left: calc(50% + 33.5rem);
+  }
+
+  .sb-l {
+    right: calc(50% + 33.5rem);
+  }
+
+  .products a {
+    width: 100%;
+  }
+
+  .user-review {
+    width: 100%
+  }
+
+}
+
+@media only screen and (min-width: 135em) {
+
+  .background {
+    height: auto;
+    width: 100vw;
   }
 
 }
