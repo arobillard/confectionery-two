@@ -419,7 +419,7 @@ body > main {
 }
 
 .products .scroll-container {
-  width: 400%;
+  width: 375%;
 }
 
 .products a {
@@ -494,11 +494,38 @@ body > main {
 
 .user-review-body q {
   quotes: none;
+  margin: 0 0 1.3rem;
 }
 
-.rating img {
-  width: 50%;
+meter {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../images/rating-5.svg") transparent;
+  background-repeat: no-repeat;
 }
+
+meter.four-stars {
+  background: url("../images/rating-4.svg") transparent;
+  background-repeat: no-repeat;
+}
+
+meter::-moz-meter-bar {
+  background: none;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: none;
+}
+
+meter::-webkit-meter-bar {
+  background: none;
+}
+
+/*.rating img {
+  width: 50%;
+}*/
+
 
 /* ----- =Footer ----- */
 
@@ -581,7 +608,7 @@ footer .navbar li {
 @media only screen and (min-width: 30em) {
 
   .products .scroll-container {
-    width: 200%;
+    width: 187.5%;
   }
 
 }
@@ -595,7 +622,8 @@ footer .navbar li {
 
   h1,
   h2,
-  p {
+  p,
+  .user-review-body q {
     margin: 0 0 1.4rem;
   }
 
@@ -730,6 +758,23 @@ footer .navbar li {
     padding: 0;
   }
 
+}
+
+@media only screen and (min-width: 52em) {
+
+  .masthead h1 {
+    display: block;
+    text-align: left;
+  }
+
+  .products p {
+    display: none;
+  }
+
+  .products .scroll-container {
+    width: 100%;
+  }
+
   .user-review {
     float: left;
     width: 33.3333%;
@@ -748,23 +793,6 @@ footer .navbar li {
   .rating {
     width: 100%;
     float: none;
-  }
-
-}
-
-@media only screen and (min-width: 52em) {
-
-  .masthead h1 {
-    display: block;
-    text-align: left;
-  }
-
-  .products p {
-    display: none;
-  }
-
-  .products .scroll-container {
-    width: 100%;
   }
 
   /* ----- +Footer ----- */
@@ -787,7 +815,9 @@ footer .navbar li {
   }
 
   h1,
-  p {
+  h2,
+  p,
+  .user-review-body q {
     margin: 0 0 1.5rem;
   }
 
