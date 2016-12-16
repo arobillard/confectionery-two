@@ -833,6 +833,10 @@ footer .navbar li {
     border-radius: 2.5px;
   }
 
+  .specials figure {
+    max-height: 60vh;
+  }
+
 }
 
 @media only screen and (min-width: 72em) {
